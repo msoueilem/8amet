@@ -8,11 +8,39 @@
     display: flex;
   }
   
+  .cell {
+    position: relative;
+    width: 40px; // Adjust based on your design
+    height: 40px; // Adjust based on your design
+  }
+  
   .dot {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    background-color: #ccc;
-    margin: 15px 40px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .horizontal-line {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 30px; // Adjust based on your design
+    height: 2px;
+    background-color: #000;
+  }
+  
+  .vertical-line {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 2px;
+    height: 30px; // Adjust based on your design
+    background-color: #000;
+    transform: translateX(-50%);
   }
 }
